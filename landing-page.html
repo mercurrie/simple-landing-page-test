@@ -2,15 +2,83 @@
 <html>
 	<head>
 		<title>Landing Page</title>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
 	</head>
 
 	<body>
 		<!--Page Content-->
+		<div class="header">
+			<img src="/assets/logo-blue-160x160-1.png" alt="EBQ Logo">
+			<button id="contactButton">CONTACT US</button>
+		</div>
+
+		<div class="hero">
+			<div class="heroContent">
+				<h1>Integrated <br>
+					<strong>Marketing Services</strong>
+				</h1>
+
+				<p>We turn your marketing plans into action by building on your ideas and executing 
+					initiatives alongside you and your team. Get a complete department that can pivot to 
+					different areas of marketing based on your needs.</p></div>
+			
+		</div>
+
+		<div class="about">
+			<div class="aboutFlexOne">
+				<div>
+					<h2>We're experts with <strong>modern marketing tools</strong>, so you don't have to be!</h2>
+
+					<p>With hands-on experience in B2B's most innovative apps and tools, we take a 
+						data-driven approach to continually improve prospect engagement. Whether we 
+						work directly out of your platform or provide our insights manually, you always 
+						get full visibility into the process.</p>
+				</div>
+
+				<img src="/assets/Marketing_Tools.svg" alt="Diagram of EBQ marketing tools">
+			</div>
+
+			<div class="aboutFlexTwo">
+				<img src="/assets/Complete-Department-Marketing.png" alt="3 people from the marketing department">
+				<div>
+					<h2><strong>The best way</strong> to build a marketing team</h2>
+
+					<p>With EBQ, you're not just hiring a marketing specialist. 
+						You're getting an entire marketing department at a fraction of the 
+						cost and effort of hiring internally.
+					</p>
+					<p>For each project, we provide: a Success Manager to drive high-level strategy, 
+						a Project Manager to oversee day-to-day operations, and one or more Specialists 
+						working diligently to amplify your brand.
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer">
+			<h2>Looking to take your <strong>marketing to the next level?</strong></h2>
+			<button id="footerContactButton">CONTACT US</button>
+
+		</div>
 
 		<script type="text/javascript">
 			// Event listener JS goes here
+			document.getElementById('contactButton').addEventListener('click', function() {
+				// Open a small window with some text
+				var contactWindow = window.open('', 'ContactWindow', 'width=500,height=500');
+				contactWindow.document.write('<h1>Contact us for more information!</h1>');
+				contactWindow.focus(); // Focus on the new window
+			});
+
+			 // Event listener to open a small window when Contact Us button in footer is clicked
+			 document.getElementById('footerContactButton').addEventListener('click', function() {
+				// Open a small window with some text
+				var contactWindow = window.open('', 'ContactWindow', 'width=500,height=500');
+				contactWindow.document.write('<p>Contact us for more information!</p>');
+				contactWindow.focus(); // Focus on the new window
+			});
 		</script>
 	</body>
 </html>

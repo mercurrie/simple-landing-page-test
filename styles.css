@@ -1,2 +1,243 @@
 /******* LANDING PAGE STYLES *******/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
 
+h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background: #EBF4FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 100px;
+    margin: auto;
+}
+
+.header img{
+    width: 106px;
+    height: 106px;
+}
+
+.header button{
+    background: #2979EC;
+    color: white;
+    border: none;
+    font-family: 'Open Sans ', sans-serif;
+    font: bold;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 164px;
+    height: 44px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.header button:hover{
+    background: #1E60D5;
+}
+
+.hero{
+    background: #EBF4FF;
+}
+
+.heroContent{
+    padding-left: 200px;
+    padding-top: 120px;
+    max-width: 500px;
+}
+
+.heroContent p{
+    padding-top: 15px;
+    padding-bottom: 150px;
+}
+
+.aboutFlexOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 200px;
+    padding-top: 150px;
+}
+
+.aboutFlexOne div{
+    max-width: 500px;
+    margin-right: 40px
+}
+
+.aboutFlexOne p{
+    padding-top: 15px;
+    padding-bottom: 150px;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+.aboutFlexOne img{
+    align-self: start;
+    width: 50%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.aboutFlexTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1150px;
+    padding: 0 200px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.aboutFlexTwo div{
+    padding-top: 120px;
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+.aboutFlexTwo p{
+    padding-top: 15px;
+    font-size: 1rem;
+}
+
+.aboutFlexTwo img{
+    align-self: start;
+    width: 40%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.footer{
+    background: #0A459E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 0;
+
+}
+
+.footer h2{
+        color: white;
+        text-align: center;
+}
+.footer button{
+    background: #FFBE3C;
+    color: #0A459E;
+    border: none;
+    margin-top: 60px;
+    font-family: 'Open Sans ', sans-serif;
+    font: bold;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 164px;
+    height: 44px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.footer button:hover{
+    background: #FFA500;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .header{
+        padding: 19px 50px;
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroContent{
+        padding-left: 0;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        max-width: 400px;
+    }
+
+    .heroContent h1{
+        text-align: center;
+    }
+
+    .heroContent p{
+        text-align: center;
+        margin-bottom: 70px;
+        padding-bottom:  0;
+    }
+    
+    .aboutFlexOne{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 70px;
+    }
+
+    .aboutFlexOne img{
+        margin-bottom: 40px;
+        min-width: 300px;
+        align-self: center;
+        margin-right: 10px;
+        padding: 0;
+    }
+
+    .aboutFlexOne div{
+        text-align: center;
+        width: 70%;
+        padding: 0;
+    }
+
+    .aboutFlexOne p{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .aboutFlexTwo{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+       
+    }
+
+    .aboutFlexTwo div{
+        text-align: center;
+        width: 70%;
+        padding: 0;
+        margin: 40px 0;
+    }
+
+    .aboutFlexTwo img{
+        align-self: center;
+        width: 60%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+}
